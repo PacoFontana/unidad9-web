@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unidad 9 - Home</title>
+
+  <!-- Poppins desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <!-- logo pequeño en navbar -->
+        <img src="img/home/logo.png" alt="Unidad 9 logo" class="brand-logo">
+        <span class="brand-title">UNIDAD 9</span>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-controls="sideMenu" aria-expanded="false">
+        <span class="hamburger">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE MENU (overlay que ocupa toda la pantalla desde la izquierda) -->
+  <aside id="sideMenu" class="side-menu" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="side-inner">
+      <div class="side-top">
+        <h1 class="side-title">UNIDAD 9</h1>
+        <button id="closeMenu" class="close-btn" aria-label="Cerrar menú">✕</button>
+      </div>
+
+      <nav class="side-nav" aria-label="Navegación principal">
+        <ul>
+          <!-- Para agregar más opciones, duplicar <li> y editar texto/href -->
+          <li><a href="https://docs.google.com/document/d/1ajJixIud3V1PdddSERWpnzZ3RVf6ceNSIPmb-MTOy1E/edit?usp=drivesdk">Normativas</a></li>
+          <li><a href="https://server.nitrado.net/donations/donate/12153034">Donaciones</a></li>
+          <li><a href="https://discord.com/channels/1405716664317644873/1417424590988382258">Soporte</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social icons dentro del menú -->
+      <div class="side-socials">
+        <a href="https://chat.whatsapp.com/BPz5yufm9IA370TEbS8uQQ?mode=ems_copy_t"><img src="img/home/social-whatsapp.png" alt="Whatsapp" class="social-icon" width="56" height="56"></a>
+        <a href="https://discord.gg/bx6QYr8mMh"><img src="img/home/social-discord.png" alt="Discord" class="social-icon" width="56" height="56"></a>
+        <a href="https://www.tiktok.com/@lapaconeta?_t=ZM-8zqgBgO6daK&_r=1"><img src="img/home/social-tiktok.png" alt="TikTok" class="social-icon" width="56" height="56"></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- HERO / HOME -->
+  <main>
+    <section class="hero" id="home" role="region" aria-label="Sección principal">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <!-- Logo grande (usa tu PNG circular) -->
+          <img src="img/home/logo.png" alt="Unidad 9 logo grande" class="hero-logo">
+
+          <h2 class="hero-title">UNIDAD 9</h2>
+
+          <p class="hero-desc">
+            Servidor Dayz en playstation, enfocado en la supervivencia y guerra de facciones
+          </p>
+
+          <button id="ctaBtn" class="cta pulse" aria-label="Obtener autorización">
+            Obtener Autorizacion
+          </button>
+
+          <!-- Social icons (como imágenes para que luego cargues tú las que prefieras) -->
+          <div class="social-row">
+            <a href="https://chat.whatsapp.com/BPz5yufm9IA370TEbS8uQQ?mode=ems_copy_t"><img src="img/home/social-whatsapp.png" alt="Whatsapp" class="social-icon" width="60" height="60"></a>
+            <a href="https://discord.gg/bx6QYr8mMh"><img src="img/home/social-discord.png" alt="Discord" class="social-icon" width="60" height="60"></a>
+            <a href="https://www.tiktok.com/@lapaconeta?_t=ZM-8zqgBgO6daK&_r=1"><img src="img/home/social-tiktok.png" alt="TikTok" class="social-icon" width="60" height="60"></a>
+          </div>
+
+          <!-- Ver tutorial (informativo, no botón) -->
+          <div class="see-tutorial" role="link" tabindex="0">
+            <span class="chev">⌄⌄</span>
+            <span>Ver tutorial</span>
+            <span class="chev">⌄⌄</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
